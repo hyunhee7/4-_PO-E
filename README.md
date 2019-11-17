@@ -77,13 +77,18 @@
     - DataSet을 모두 만들면 yolov3.cfg 파일 생성 후 class, filters 등의 설정작업 수행
     
     - darknet convolution layer 다운로드 후, 학습 실행 (GPU 2개를 이용해 학습함)
-    
+
   4. 이미지 Detection 시, 결괏값을 Pi로 전송
   
   5. 모델 학습 결과
   
-      ![res](https://github.com/hyunhee7/4-_PO-E/blob/master/screenshot/trash_detection.jpg)
-
+   - 최종 모델
+   
+   <img src="https://github.com/hyunhee7/4-_PO-E/blob/master/screenshot/trash_detection.jpg" width="30%" height="20%"></img>
+  
+   - Detection 결과
+   
+   <img src="https://github.com/hyunhee7/4-_PO-E/blob/master/screenshot/model.png" width="50%" height="40%"></img>
 
 ## 청소기 구동
   1. 3D모델링 및 3D프린팅
