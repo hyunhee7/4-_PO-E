@@ -64,11 +64,14 @@
     - git clone https://github.com/AlexeyAB/Yolo_mark
   
     - Detection할 이미지 파일에 Bounding-Box를 그려서 Labeling 작업을 해야한다. PO-E는 수집한 약 1000장의 trash이미지로 수행하였다.
-    ![Labeling](https://github.com/hyunhee7/4-_PO-E/blob/master/screenshot/detection.jpg)
     
     - DataSet을 모두 만들면 yolov3.cfg 파일 생성 후 class, filters 등의 설정작업 수행
     
     - darknet convolution layer 다운로드 후, 학습 실행 (GPU 2개를 이용해 학습함)
     
-   4. 모델 학습 결과
-   ![res](https://github.com/hyunhee7/4-_PO-E/blob/master/screenshot/trash_detection.jpg)
+  4. 모델 학습 결과
+  
+      ![res](https://github.com/hyunhee7/4-_PO-E/blob/master/screenshot/trash_detection.jpg)
+
+
+## 모터 구동 및 쓰레기 수집
