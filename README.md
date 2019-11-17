@@ -8,6 +8,11 @@
 * Language : Python3.6, C++
 * Library : CUDA 8.0, YOLOv3, YOLOMark, mjpg-Stream(실시간 스트리밍 기능), Keras Library(Categorical Model)
 
+## 시연 영상
+* 발표 당일 : https://youtu.be/na1Ibft8xkA 
+* 앞에서 촬영 : https://youtu.be/IO4Afib1BYI
+* 뒤에서 촬영 : https://youtu.be/pMwsdaQfFL0
+
 ## 구현 기술
 ### 자율주행 
 * 자율 주행 RC카를 통해 자율 주행을 구현한다. 
@@ -21,10 +26,6 @@
 * 물체 인식을 통한 결과를 받는다. 만약 도로 위에 인식된 물체가 쓰레기로 판정 될 경우 청소기에 장착된 모터를 돌려 청소기를 가동시킨다. 
 * 3D프린트로 청소 차체 제작 및 Detection결과를 전달받아 모터 구현.
 
-### 시연 영상
-* 발표 당일 : https://youtu.be/na1Ibft8xkA 
-* 앞에서 촬영 : https://youtu.be/IO4Afib1BYI
-* 뒤에서 촬영 : https://youtu.be/pMwsdaQfFL0
 
 ## 프로젝트 일정
 ![Main](https://github.com/hyunhee7/4-_PO-E/blob/master/screenshot/%EC%9D%BC%EC%A0%95.png)
