@@ -21,11 +21,19 @@
 * 물체 인식을 통한 결과를 받는다. 만약 도로 위에 인식된 물체가 쓰레기로 판정 될 경우 청소기에 장착된 모터를 돌려 청소기를 가동시킨다. 
 * 3D프린트로 청소 차체 제작 및 Detection결과를 전달받아 모터 구현.
 
+### 시연 영상
+* 발표 당일 : https://youtu.be/na1Ibft8xkA 
+* 앞에서 촬영 : https://youtu.be/IO4Afib1BYI
+* 뒤에서 촬영 : https://youtu.be/pMwsdaQfFL0
+
 ## 프로젝트 일정
 ![Main](https://github.com/hyunhee7/4-_PO-E/blob/master/screenshot/%EC%9D%BC%EC%A0%95.png)
 
 ## PO-E 구조도
 ![struct](https://github.com/hyunhee7/4-_PO-E/blob/master/screenshot/structure.png)
+
+## 코드 구조 
+![struct](https://github.com/hyunhee7/4-_PO-E/blob/master/screenshot/code_struct.jpg)
 
 ## 자율주행 모델 구축 및 훈련
   1. Linux에 DonkeyCar 파일 install
@@ -69,9 +77,22 @@
     
     - darknet convolution layer 다운로드 후, 학습 실행 (GPU 2개를 이용해 학습함)
     
-  4. 모델 학습 결과
+  4. 이미지 Detection 시, 결괏값을 Pi로 전송
+  
+  5. 모델 학습 결과
   
       ![res](https://github.com/hyunhee7/4-_PO-E/blob/master/screenshot/trash_detection.jpg)
 
 
-## 모터 구동 및 쓰레기 수집
+## 청소기 구동
+  1. 3D모델링 및 3D프린팅
+
+      <img src="https://github.com/hyunhee7/4-_PO-E/blob/master/screenshot/modeling.jpg" width="40%" height="30%" align="left"></img>
+      
+      <img src="https://github.com/hyunhee7/4-_PO-E/blob/master/screenshot/trash2.png" width="40%" height="30%"></img>
+      
+  2. 모터 구조
+  
+      <img src="https://github.com/hyunhee7/4-_PO-E/blob/master/screenshot/servomotor_structure.jpg" width="30%" height="20%"></img>
+      
+ 
