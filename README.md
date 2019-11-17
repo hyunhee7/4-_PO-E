@@ -39,25 +39,36 @@
   5. donkey car app 설정(raspberry pi)
   
   6. 운전 및 학습
-    - <code> git clone https://github.com/autorope/donkeycar </code>
+    - git clone https://github.com/autorope/donkeycar 
     
     - OpenCV, CuDNN, CUDA 설치
     
-    - <code> <설정한 IP주소>:8887 </code> 로 접속 후 운전 확인 
+    - <설정한 IP주소>:8887 로 접속 후 운전 확인 
     
     - 조이스틱으로 운전하여 Webcam으로 Data수집 (약 20,000장 사진 수집)
     
-    - <code> rsync -r pi@<your_pi_ip_address>:~/mycar/data/  ~/mycar/data/ </code> 로 수집한 사진을 서버(웍)로 이동
+    - rsync -r pi@<your_pi_ip_address>:~/mycar/data/  ~/mycar/data/ 로 수집한 사진을 서버(웍)로 이동
     
-    - <code> python ~/mycar/manage.py train --model ~/mycar/models/<파일이름>.h5 </code> 로 모델 생성. 
+    - python ~/mycar/manage.py train --model ~/mycar/models/<파일이름>.h5 로 모델 생성. 
       이때, myconfig.py에서 다양한 모델을 생성해볼 수 있다.
 
-## 자율주행 모델 구축 및 훈련
+## Object Detection
   1. 파이 내 Real-time detection 시도 (하드웨어 성능으로 인한 실패)
   
   2. mjpg-Streamer를 이용한 서버와의 HTTP 통신
   
-    - <code> git clone https://github.com/jacksonliam/mjpg-streamer.git </code>
+    - git clone https://github.com/jacksonliam/mjpg-streamer.git
+  
+  3. YOLOMark를 통한 MODEL 학습
+  
+    - git clone https://github.com/AlexeyAB/Yolo_mark
+  
+    - Detection할 이미지 파일에 Bounding-Box를 그려서 Labeling 작업을 해야한다. PO-E는 수집한 약 1000장의 trash이미지로 수행하였다.
+    ![Labeling](https://github.com/hyunhee7/4-_PO-E/blob/master/screenshot/detection.jpg)
     
-    - <code> sudo apt-get install cmake python-imaging libjpeg-dev build-essential </code>
-  3. 
+    - DataSet을 모두 만들면 yolov3.cfg 파일 생성 후 class, filters 등의 설정작업 수행
+    
+    - darknet convolution layer 다운로드 후, 학습 실행 (GPU 2개를 이용해 학습함)
+    
+   4. 모델 학습 결과
+   ![res](https://github.com/hyunhee7/4-_PO-E/blob/master/screenshot/trash_detection.jpg)
