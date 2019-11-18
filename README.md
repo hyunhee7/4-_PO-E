@@ -81,13 +81,6 @@
   4. 이미지 Detection 시, 결괏값을 Pi로 전송
   
   5. 모델 학습 결과
-  
-   - 최종 PO-E 모델
-   
-   <img src="https://github.com/hyunhee7/4-_PO-E/blob/master/screenshot/model.png" width="50%" height="40%"></img>
-   
-  
-   - Detection 결과
    
    <img src="https://github.com/hyunhee7/4-_PO-E/blob/master/screenshot/trash_detection.jpg" width="30%" height="20%"></img>
    
